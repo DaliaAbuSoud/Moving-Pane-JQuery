@@ -19,7 +19,7 @@ img {
 .container {
     margin-top: 20px;
     position: relative;
-    border: 5px solid whitesmoke;
+    border: 5px solid rgb(93, 93, 93);
     height: 510px;
     width: 810px;
 }
@@ -34,7 +34,16 @@ img {
     width: 560px;
     overflow-x: hidden;
 }
-.final-image {
+.top-image-1 {
+    display: block;
+}
+.top-image-2 {
+    display: none;
+}
+.bottom-image-1 {
+    display: block;
+}
+.bottom-image-2 {
     display: none;
 }
 
@@ -53,14 +62,12 @@ img {
 }
 .title {
     padding-top: 20px;
-    font-family: initial;
-    font-style: italic;
+    font-family: fantasy;
 }
 
 .message {
     display: none;
-    font-family: initial;
-    font-style: italic;
+    font-family: fantasy;
     color: black;
     font-size: 34px;
     padding-top: 30px;

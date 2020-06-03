@@ -41,30 +41,33 @@ $(".bar").on("mousedown", function mouseDown() {
         $(".title").css({
             color: `rgb(${newFontColor}, ${newFontColor}, ${newFontColor})`,
         });
+        $(".message").css({
+            color: `rgb(${newFontColor}, ${newFontColor}, ${newFontColor})`,
+        });
+        let newBorderColor = 0 + (705 - positionX);
+        $(".container").css({
+            border: `5px solid rgb(${newBorderColor}, ${newBorderColor}, ${newBorderColor})`,
+        });
 
         if (newLeft <= 100) {
-            $(".top-image").css({
+            $(".top-image-1").css({
                 display: "none",
             });
-            $(".bottom-image").css({
-                display: "none",
-            });
-            $(".bar").css({
-                display: "none",
-            });
-            $(".final-image").css({
+            $(".top-image-2").css({
                 display: "block",
             });
+            $(".bottom-image-1").css({
+                display: "none",
+            });
+            $(".bottom-image-2").css({
+                display: "block",
+            });
+
             $(".title").css({
-                color: "rgb(51, 24, 24)",
+                color: "white",
             });
             $(".message").css({
                 display: "block",
-                color: "rgb(51, 24, 24)",
-            });
-
-            $("body").css({
-                backgroundColor: "rgba(243, 163, 57, 0.84)",
             });
         } else if (newLeft <= 0) {
             $(".top-image").css({
